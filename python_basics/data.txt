@@ -1,6 +1,2 @@
-amit
-kesari
-manish
-ranganath
-okechukwu
-sunita
+hello world
+hello python
