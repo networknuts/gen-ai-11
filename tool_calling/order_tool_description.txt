@@ -1,0 +1,8 @@
+This tool provides order data for a user by calling the ecommerce api 
+using the user_id as a mandatory variable.
+This tool provides the following output regarding the order:
+- item name 
+- delivery date of the order 
+- order status
+
+This tool cannot function if the user_id is missing.
