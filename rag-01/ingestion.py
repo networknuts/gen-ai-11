@@ -1,4 +1,4 @@
-from langchain_pdf_inspector import PdfInspectorLoader
+from langchain_opendataloader_pdf import OpenDataLoaderPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings
@@ -6,13 +6,13 @@ from langchain_qdrant import QdrantVectorStore
 
 # ENVIRONMENT VARIABLES
 load_dotenv()
-PDF_FILE_PATH = "small_data.pdf"
+PDF_FILE_PATH = "large_data.pdf"
 EMBEDDING_MODEL = "text-embedding-3-large"
 QDRANT_URL = "http://localhost:6333"
 QDRANT_COLLECTION_NAME = "example_collection"
 
 # STEP 1: LOAD THE PDF INTO TEXT
-loader = PdfInspectorLoader(PDF_FILE_PATH)
+loader = OpenDataLoaderPDFLoader(file_path=PDF_FILE_PATH,format="text",quiet=True)
 pdf_text_data = loader.load()
 print("PDF LOADED SUCCESSFULLY")
 
