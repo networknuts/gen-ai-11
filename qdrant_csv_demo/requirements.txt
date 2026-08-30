@@ -1,0 +1,6 @@
+langchain-core==1.5.3
+langchain-openai==1.4.2
+langchain-qdrant==1.1.0
+openai==2.48.0
+python-dotenv==1.2.2
+qdrant-client==1.19.0
